@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		682240EAA0DB8A2411A3A442 /* Pods_TodoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6020557F3DEF55E98D45F1 /* Pods_TodoApp.framework */; };
 		CD0BDB1020C6EBA100D89343 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BDB0F20C6EBA100D89343 /* CategoryViewController.swift */; };
-		CD22278C20B8344A0098480C /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD22278A20B8344A0098480C /* DataModel.xcdatamodeld */; };
 		CDC9147620AB763E002ACE2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9147520AB763E002ACE2F /* AppDelegate.swift */; };
 		CDC9147820AB763E002ACE2F /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9147720AB763E002ACE2F /* ToDoListViewController.swift */; };
 		CDC9147B20AB763E002ACE2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC9147920AB763E002ACE2F /* Main.storyboard */; };
 		CDC9147D20AB763F002ACE2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC9147C20AB763F002ACE2F /* Assets.xcassets */; };
 		CDC9148020AB763F002ACE2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC9147E20AB763F002ACE2F /* LaunchScreen.storyboard */; };
+		CDDCEE32213E656300ACC7D1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCEE31213E656300ACC7D1 /* Item.swift */; };
+		CDDCEE34213E657000ACC7D1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCEE33213E657000ACC7D1 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +23,6 @@
 		4B96FA6FB0AD25E40536C37C /* Pods-TodoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodoApp/Pods-TodoApp.release.xcconfig"; sourceTree = "<group>"; };
 		5D6020557F3DEF55E98D45F1 /* Pods_TodoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0BDB0F20C6EBA100D89343 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
-		CD22278B20B8344A0098480C /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		CDC9147220AB763E002ACE2F /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC9147520AB763E002ACE2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDC9147720AB763E002ACE2F /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +30,8 @@
 		CDC9147C20AB763F002ACE2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDC9147F20AB763F002ACE2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDC9148120AB763F002ACE2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDDCEE31213E656300ACC7D1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CDDCEE33213E657000ACC7D1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +88,8 @@
 		CDFB537E20B18C1F004DB8F4 /* Dada Model */ = {
 			isa = PBXGroup;
 			children = (
-				CD22278A20B8344A0098480C /* DataModel.xcdatamodeld */,
+				CDDCEE33213E657000ACC7D1 /* Category.swift */,
+				CDDCEE31213E656300ACC7D1 /* Item.swift */,
 			);
 			path = "Dada Model";
 			sourceTree = "<group>";
@@ -256,10 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDCEE32213E656300ACC7D1 /* Item.swift in Sources */,
 				CD0BDB1020C6EBA100D89343 /* CategoryViewController.swift in Sources */,
 				CDC9147820AB763E002ACE2F /* ToDoListViewController.swift in Sources */,
-				CD22278C20B8344A0098480C /* DataModel.xcdatamodeld in Sources */,
 				CDC9147620AB763E002ACE2F /* AppDelegate.swift in Sources */,
+				CDDCEE34213E657000ACC7D1 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -390,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -405,9 +409,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 47JH7NR5DK;
 				INFOPLIST_FILE = TodoApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.silvakirsimae.TodoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -421,9 +428,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 47JH7NR5DK;
 				INFOPLIST_FILE = TodoApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.silvakirsimae.TodoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -453,19 +463,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		CD22278A20B8344A0098480C /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				CD22278B20B8344A0098480C /* DataModel.xcdatamodel */,
-			);
-			currentVersion = CD22278B20B8344A0098480C /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = CDC9146A20AB763E002ACE2F /* Project object */;
 }
